@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big One - Street Food Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 class="logo-text">BIG ONE</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#featured">Spécialités</a></li>
+                    <li><a href="#about">Pourquoi Nous</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-subtitle">Street Food Premium</h2>
+                <h1 class="hero-title">BIG ONE</h1>
+                <p class="hero-description">Découvrez nos délicieux tacos, burgers et wraps préparés avec des ingrédients frais et de qualité.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Voir le Menu</a>
+                    <a href="https://wa.me/212643540399" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Menu</h2>
+                <p class="section-subtitle">Découvrez nos délicieuses offres</p>
+            </div>
+
+            <div class="menu-filter fade-in">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="boissons">
+                    <i class="fas fa-wine-glass-alt"></i> Boissons
+                </button>
+                <button class="filter-btn" data-filter="tacos">
+                    <i class="fas fa-pepper-hot"></i> Tacos
+                </button>
+                <button class="filter-btn" data-filter="burgers">
+                    <i class="fas fa-hamburger"></i> Burgers
+                </button>
+                <button class="filter-btn" data-filter="wraps">
+                    <i class="fas fa-bread-slice"></i> Wraps
+                </button>
+            </div>
+
+            <div class="menu-items-grid" id="menu-items-container">
+                <div class="menu-item-card" data-category="boissons">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Coca-Cola</h3>
+                        <p class="menu-item-description">Boisson gazeuse rafraîchissante</p>
+                    </div>
+                    <div class="menu-item-price">8 MAD</div>
+                    <div class="menu-item-badge"> Boissons</div>
+                </div>
+
+                <div class="menu-item-card" data-category="boissons">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Sprite</h3>
+                        <p class="menu-item-description">Boisson au citron rafraîchissante</p>
+                    </div>
+                    <div class="menu-item-price">8 MAD</div>
+                    <div class="menu-item-badge"> Boissons</div>
+                </div>
+
+                <div class="menu-item-card" data-category="boissons">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Fanta</h3>
+                        <p class="menu-item-description">Boisson gazeuse à l'orange</p>
+                    </div>
+                    <div class="menu-item-price">8 MAD</div>
+                    <div class="menu-item-badge">🥤 Boissons</div>
+                </div>
+
+                <div class="menu-item-card" data-category="boissons">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Pom's</h3>
+                        <p class="menu-item-description">Jus de pomme rafraîchissant</p>
+                    </div>
+                    <div class="menu-item-price">7 MAD</div>
+                    <div class="menu-item-badge">Boissons</div>
+                </div>
+
+                <div class="menu-item-card" data-category="boissons">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Eau minérale</h3>
+                        <p class="menu-item-description">Eau naturelle rafraîchissante</p>
+                    </div>
+                    <div class="menu-item-price">5 MAD</div>
+                    <div class="menu-item-badge">Boissons</div>
+                </div>
+
+                <div class="menu-item-card" data-category="tacos">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Tacos Poulet</h3>
+                        <p class="menu-item-description">Tacos garni de poulet frais et légumes croquants</p>
+                    </div>
+                    <div class="menu-item-price">25 MAD</div>
+                    <div class="menu-item-badge">Tacos</div>
+                </div>
+
+                <div class="menu-item-card" data-category="tacos">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Tacos Viande</h3>
+                        <p class="menu-item-description">Tacos garni de viande hachée et sauce spéciale</p>
+                    </div>
+                    <div class="menu-item-price">30 MAD</div>
+                    <div class="menu-item-badge">Tacos</div>
+                </div>
+
+                <div class="menu-item-card" data-category="tacos">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Tacos Mixte</h3>
+                        <p class="menu-item-description">Mélange de poulet et viande avec double fromage</p>
+                    </div>
+                    <div class="menu-item-price">35 MAD</div>
+                    <div class="menu-item-badge">Tacos</div>
+                </div>
+
+                <div class="menu-item-card" data-category="burgers">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Burger Classique</h3>
+                        <p class="menu-item-description">Steak de bœuf, salade, tomate et sauce maison</p>
+                    </div>
+                    <div class="menu-item-price">22 MAD</div>
+                    <div class="menu-item-badge">Burgers</div>
+                </div>
+
+                <div class="menu-item-card" data-category="burgers">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Cheeseburger</h3>
+                        <p class="menu-item-description">Burger avec double fromage fondu et bacon croustillant</p>
+                    </div>
+                    <div class="menu-item-price">28 MAD</div>
+                    <div class="menu-item-badge">Burgers</div>
+                </div>
+
+                <div class="menu-item-card" data-category="burgers">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Burger Double</h3>
+                        <p class="menu-item-description">Double steak, double fromage, sauce signature</p>
+                    </div>
+                    <div class="menu-item-price">35 MAD</div>
+                    <div class="menu-item-badge">Burgers</div>
+                </div>
+
+                <div class="menu-item-card" data-category="wraps">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Wrap Poulet</h3>
+                        <p class="menu-item-description">Wrap croustillant au poulet pané et sauce au fromage</p>
+                    </div>
+                    <div class="menu-item-price">24 MAD</div>
+                    <div class="menu-item-badge">Wraps</div>
+                </div>
+
+                <div class="menu-item-card" data-category="wraps">
+                    <div class="menu-item-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Wrap Viande</h3>
+                        <p class="menu-item-description">Wrap à la viande hachée et légumes grillés</p>
+                    </div>
+                    <div class="menu-item-price">28 MAD</div>
+                    <div class="menu-item-badge">Wraps</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Spécialités</h2>
+                <p class="section-subtitle">Les plats les plus populaires</p>
+            </div>
+
+            <div class="featured-items">
+                <div class="featured-card slide-up">
+                    <div class="featured-image" style="background-image: url('images/Screenshot\ 2025-12-13\ 193239.png');"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Burger Double</h3>
+                        <p class="featured-description">Notre burger signature avec deux steaks juteux, fromage fondu, et sauce maison.</p>
+                        <div class="featured-price">35 MAD</div>
+                        <a href="https://wa.me/212643540399?text=Je%20voudrais%20commander%20un%20Burger%20Double" target="_blank" class="btn btn-small">Commander</a>
+                    </div>
+                </div>
+
+                <div class="featured-card slide-up">
+                    <div class="featured-image" style="background-image: url('images/Screenshot\ 2025-12-13\ 193228.png');"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Tacos Mixte</h3>
+                        <p class="featured-description">Un délicieux mélange de poulet et viande avec nos sauces spéciales.</p>
+                        <div class="featured-price">35 MAD</div>
+                        <a href="https://wa.me/212643540399?text=Je%20voudrais%20commander%20un%20Tacos%20Mixte" target="_blank" class="btn btn-small">Commander</a>
+                    </div>
+                </div>
+
+                <div class="featured-card slide-up">
+                    <div class="featured-image" style="background-image: url('images/Screenshot\ 2025-12-13\ 193259.png');"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Wrap Poulet</h3>
+                        <p class="featured-description">Un wrap croustillant rempli de poulet frais et légumes croquants.</p>
+                        <div class="featured-price">24 MAD</div>
+                        <a href="https://wa.me/212643540399?text=Je%20voudrais%20commander%20un%20Wrap%20Poulet" target="_blank" class="btn btn-small">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi Choisir Big One</h2>
+                <p class="section-subtitle">Notre engagement envers l'excellence</p>
+            </div>
+
+            <div class="about-features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature-title">Ingrédients Frais</h3>
+                    <p class="feature-description">Nous utilisons uniquement des ingrédients frais et de qualité pour garantir le meilleur goût.</p>
+                </div>
+
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Service Rapide</h3>
+                    <p class="feature-description">Nous préparons et livrons vos commandes rapidement pour satisfaire votre faim.</p>
+                </div>
+
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="feature-title">Goût Exquis</h3>
+                    <p class="feature-description">Nos recettes uniques et nos sauces maison garantissent une expérience gustative inoubliable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">Commandez maintenant via WhatsApp</p>
+            </div>
+
+            <div class="contact-content slide-up">
+                <div class="contact-info">
+                    <h3 class="contact-title">Commandez en quelques clics</h3>
+                    <p class="contact-description">Envoyez-nous un message sur WhatsApp pour passer votre commande. Nous vous répondrons rapidement pour confirmer et préparer votre repas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+212 643 540 399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-action">
+                    <a href="https://wa.me/212643540399" target="_blank" class="btn btn-whatsapp-large">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span class="btn-text">Commander via WhatsApp</span>
+                            <span class="btn-subtext">Cliquez pour commander maintenant</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text">BIG ONE</h2>
+                    <p class="footer-tagline">Street Food Premium</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <div class="footer-info">
+                    <p class="copyright">&copy; 2023 Big One. Tous droits réservés.</p>
+                    <p class="footer-note">Street Food Premium - Casablanca, Maroc</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/212643540399" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
